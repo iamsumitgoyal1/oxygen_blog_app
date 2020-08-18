@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  resources :articles, only: [:show]
+  resources :articles, only: %i[show index]
 end
